@@ -1,2 +1,334 @@
-h2 
-    color: red
+/*Обнуление*/
+*
+	padding: 0
+	margin: 0
+	border: 0
+
+*,*:before,*:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+
+a:focus,a:active
+    outline: none
+
+nav,footer,header,aside
+    display: block
+
+html,body
+	height: 100%
+	width: 100%
+	font-size: 100%
+	line-height: 1
+	font-size: 14px
+	-ms-text-size-adjust: 100%
+	-moz-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+
+input,button,textarea
+    font-family:inherit
+
+input::-ms-clear
+    display: none
+button
+    cursor: pointer
+
+button::-moz-focus-inner 
+    padding: 0
+    border: 0
+
+a, a:visited
+    text-decoration: none
+
+a:hover
+    text-decoration: none
+ul li
+    list-style: none
+
+img
+    vertical-align: top
+
+h1,h2,h3,h4,h5,h6
+    font-size: inherit
+    font-weight: 400
+/*--------------------*/
+
+header
+    background-color: #2d333b;
+    border-bottom: 1px solid #444
+    position: fixed
+    width: 100%
+    z-index: 99
+    font-family: 'Noto Sans', sans-serif;
+    nav 
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 960px
+        margin: 0 auto
+        padding: 0.5rem 1.5rem
+        .brand
+            a
+                color: #b3b9c5
+                font-size: 1.2rem
+        .menu
+            display: flex
+            list-style-type: none
+            margin: 0
+            &_item
+                font-size: 1.2rem
+                padding: 0.5rem
+                color: #b3b9c5
+                cursor: pointer
+        .btn_toggle 
+            width: 25px
+            height: 25px
+            cursor: pointer
+            background: url("../icons/toggle_theme.svg") center center/cover no-repeat
+    .hamburger 
+        display:none
+
+body
+    background-color: rgb(37, 37, 37)
+    font-family: 'Noto Sans', sans-serif;
+
+.container 
+    max-width: 960px
+    margin: 0 auto
+    padding: 2rem
+
+.greeting_wrapper
+    display: flex
+    align-items: center
+    margin-top: 50px
+    .greeting_text
+        min-width: 50%
+        .title
+            color: #ffd479
+            font-size: 3rem
+            margin-bottom: 2rem
+            font-weight: 700
+        .subtitle
+            font-size: 1.7rem
+            color: #b3b9c5
+            line-height: 1.6
+            span
+                display: inline-block
+                border-bottom: 1px solid #ffd479
+                color: #fff
+    .main_img
+        border: 1px solid #444
+        border-radius: 8px
+        height: auto
+        margin-left: 2rem
+        width: 250px
+
+.header
+    color: #fff
+    font-size: 2rem
+    border-bottom: 1px solid #ffd479 
+    font-weight: 700
+
+.about_me_warapper
+    margin-top: 50px
+    .about_me_text
+        font-size: 1.4rem
+        color: #b3b9c5
+        margin-top: 30px
+        p:first-child
+            margin-bottom: 2rem
+        .about_me_item
+            display: flex
+            justify-content: space-between
+            margin-bottom: 20px
+            .periods 
+                width: 33%
+                text-decoration: underline
+                text-decoration-color: #ffd479
+                color: #fff
+            p 
+                width: 60%
+                span
+                    border-bottom: 1px solid #ffd479
+                    color: #fff
+                    line-height: 1.6
+
+.projects_wrapper 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    h2
+        display: block
+        width: 100%
+        margin-bottom: 2rem
+    .project_item
+        display: flex
+        flex-direction: column
+        width: 40%
+        margin-bottom: 2.5rem
+        .project_descr
+            order: 2
+            margin-bottom: 1.3rem 
+            h3 
+                text-decoration: underline
+                text-decoration-color: #ffd479
+                color: #fff
+                font-size: 1.5rem
+                margin-bottom: 1.3rem
+            p
+                font-size: 1.2rem
+                color: #b3b9c5
+                line-height: 1.1
+        img
+            border: 1px solid #444
+            border-radius: 8px
+            height: 200px
+            width: 300px
+            margin: 0 auto
+            margin-bottom: 1rem
+        .project_btns
+            order: 4
+            text-align: center
+            display: flex
+            justify-content: space-between
+            a
+                width: 10rem
+                height: 3rem
+                color: #ffd479
+                font-size: 1.5rem
+                line-height: 1.8
+                border: 1px solid #ffd479
+                border-radius: 8px
+                &:hover
+                    background-color: rgba(0,0,0,0.6);
+
+.contact_wrapper
+    p
+        font-size: 1.4rem
+        color: #b3b9c5
+        margin-top: 2rem
+    .contact_list
+        margin-top: 1.7rem
+        padding-left: 40px
+        .contact_item
+            margin-bottom: 1.5rem
+            position: relative
+            a
+                color: #ffd479
+                font-size: 1.6rem
+                &:hover
+                    color: #FFF;
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                width: 20px
+                height: 20px
+                left: -30px
+            &:nth-child(1)::before
+                background: url("../icons/resume.svg") center center/cover no-repeat
+            &:nth-child(2)::before
+                background: url("../icons/phone.svg") center center/cover no-repeat
+            &:nth-child(3)::before
+                background: url("../icons/email.svg") center center/cover no-repeat
+            &:nth-child(4)::before
+                background: url("../icons/github.svg") center center/cover no-repeat
+    form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        margin-top: 20px
+        label
+            width: 35%
+            color: #b3b9c5
+            font-size: 1.2rem
+            margin-bottom: .8rem
+            input
+                width: 100%
+                height: 2.5rem
+                border: 1px solid #ffd479
+                border-radius: 8px
+                padding: 5px
+                margin-top: 5px
+        label:nth-child(5)
+            width: 100%
+            display: block
+            margin: 0 auto
+            text-align: center
+            margin-bottom: 15px
+            textarea
+                display: block
+                width: 70%
+                height: 7rem
+                padding: 10px
+                margin: 0 auto
+                margin-top: 5px
+        .add_file
+            display: block
+            position: relative
+            text-align: right
+            height: 2rem
+            width: 150px
+            cursor: pointer
+            &::before
+                content: ""
+                position: absolute
+                width: 25px
+                height: 25px
+                background: url("../icons/add_file.svg") center center/cover no-repeat
+                left: 0px
+                top: 7px
+            input
+                visibility: hidden
+                width: 0
+                height: 0
+        .btn
+            background-color: transparent
+            height: 3rem
+            color: #ffd479
+            font-size: 1.4rem
+            line-height: 1.7    
+            border: 1px solid #ffd479
+            border-radius: 8px
+            padding: 5px
+            cursor: pointer
+            &:hover
+                background-color: rgba(0,0,0,0.6);
+
+footer
+    display: flex
+    justify-content: space-between
+    font-size: 1.3rem
+    color: #b3b9c5
+    background-color: #2d333b
+    border-top: 1px solid #444
+    padding: 10px
+    font-family: 'Noto Sans', sans-serif;
+    .git_icon
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 20px
+            height: 20px
+            background: url("../icons/github_white.svg") center center/cover no-repeat
+            left: -25px
+            top: -2px
+        a 
+            color: #b3b9c5
+
+@import "media"
+
+            
+
+                
+            
+            
+            
+
+
+        
+
+        

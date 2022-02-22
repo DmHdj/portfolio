@@ -1,0 +1,149 @@
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+
+    .greeting_wrapper
+        .greeting_text
+            .title
+                font-size: 2.3rem
+            .subtitle
+                font-size: 1.3rem
+
+    .about_me_warapper .about_me_text .about_me_item 
+        .periods
+            width: 24%
+        p
+            width: 65%
+    
+    .projects_wrapper
+        justify-content: space-between
+        .project_item 
+            img
+                width: 100%
+            .project_btns 
+                a
+                    width: auto
+                    padding: 5px 10px
+                    line-height: 1.5
+    
+    .contact_wrapper form .add_file::before
+        left: -20px
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    
+    .about_me_warapper .about_me_text .about_me_item
+        flex-direction: column
+        .periods
+            width: 100%
+            padding-bottom: 1rem 
+        p
+            width: 100%
+
+    .projects_wrapper 
+        .project_item .project_btns
+            flex-direction: column
+            a:first-child
+                margin-bottom: 10px
+
+@media (max-width: 576px)
+    .container
+        max-width: none
+        padding: 5px 15px
+    
+    /* начало гамбурера  */
+    .hamburger 
+        display: block
+        position: absolute
+        right: 10px
+        top: 15px
+        -webkit-transform:translateY(-50%)
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+
+    .hamburger span
+        display: block
+        height: 2px
+        width: 100%
+        background-color: #b3b9c5
+        margin-bottom: 2px
+        -webkit-transition: 0.5s all
+        transition: 0.5s all
+
+    .hamburger_active span 
+        margin-bottom: -2px
+            
+    .hamburger_active span:nth-child(1) 
+        -webkit-transform: translateY(3px) rotate(-45deg)
+        transform: translateY(3px) rotate(-45deg)
+
+    .hamburger_active span:nth-child(2)
+        display: none
+
+    .hamburger_active span:nth-child(3)
+        -webkit-transform: translateY(3px) rotate(45deg)
+        transform: translateY(3px) rotate(45deg)
+
+    .menu
+        position: fixed
+        box-orient: vertical
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 30%
+        height: 100vh
+        padding: 20px 15px
+        background-color: #444
+        transition: 0.6s all;transition:0.6s all
+        z-index: 1000
+
+    .menu_active
+        left: 0
+        padding-left: 15px
+    // конец гамбургера
+    
+    .greeting_wrapper
+        flex-direction: column-reverse
+        margin-top: 30px
+        .main_img
+            margin-left: 0
+            width: 200px
+            margin-bottom: 1rem
+        .greeting_text
+                .title
+                    text-align: center
+    .about_me_warapper
+        margin-top: 20px
+    .projects_wrapper
+        margin-top: 20px
+        flex-direction: column
+        .project_item
+            width: 100%
+    .contact_wrapper 
+        margin-bottom: 2rem 
+        form
+            flex-direction: column 
+            label
+                width: 100%
+            label:nth-child(5)
+                textarea
+                    width: 100%
+            .button_reset
+                margin-bottom: 1rem
+            .add_file
+                align-self: center
+                margin-bottom: 1.4rem
+
+    footer > div
+        display: none
+
+
+                
+                
+
+
+

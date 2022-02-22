@@ -4,51 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Дмитрий Х.</title>
     <link rel="stylesheet" href="css/style.min.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
 <body>
     <header>
         <nav>
+            <div class="brand"><a href="#">Дмитрий Х.</a></div>
             <ul class="menu">
-                <li class="menu_item">Обо мне</li>
-                <li class="menu_item">Проекты</li>
-                <li class="menu_item">Контакты</li>
+                <li class="menu_item">
+                     Обо мне
+                </li>
+                <li class="menu_item">
+                    Проекты
+                </li>
+                <li class="menu_item">
+                    Контакты
+                </li>
             </ul>
-            <div class="btn_toggle"></div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- <div class="btn_toggle"></div> -->
         </nav>
     </header>
     <main>
         <article class="greeting">
             <div class="container">
                 <div class="greeting_wrapper">
-                    <h1>Привет, я Дима</h1>
-                    <p class="greeting_text">
-                        Я начинающий <span>Frontend-разработчик</span>. Стараюсь делать то, что мне по-настоящему интересно и заодно стать профессионалом.
-                    </p>
-                    <img src="img/1200px-Smiley.svg.png" alt="Foto">
+                    <div class="greeting_text">
+                        <h1 class="title">Привет, я Дима!</h1>
+                        <p class="subtitle">
+                            Я начинающий <span>Frontend-разработчик</span>. Стараюсь делать то, что мне по-настоящему интересно и заодно стать профессионалом.
+                        </p>
+                    </div>
+                    <img src="img/dmhdj.jpeg" class="main_img" alt="Foto">
                 </div>
             </div>
         </article>
         <article class="about_me">
             <div class="container">
                 <div class="about_me_warapper">
-                    <h2>Обо мне</h2>
+                    <h2 class="header">Обо мне</h2>
                     <div class="about_me_text">
                         <p>
                             Мне 24 года. Живу в городе Тула.
                         </p>
-                        <p>
-                            <span>сентябрь 2015 - февраль 2021</span> Учился в Санкт-Петербургском государственном технологическом институте. Имею специальность <span>инженер</span>.
-                        </p>
-                        <p>
-                            <span>август 2019 - март 2021</span> Во время учебы работал менеджером в компании ООО "Подъемные платформы". Мне стала интересна область Web-разработки. 
-                        </p>
-                        <p>
-                            <span>март 2021 - январь 2021</span> Работал менеджером по работе с клиентами в компании <span>"СеоВен"</span>, специализирующаяся на рекламе и созданию сайтов. В мои обязанности входило общение с клиентами по техническим доработкам сайтов (или созданию сайтов), тестирование работы сайта. Был звеном между клиентом и разработчиками. 
-                             <span>Стала интересна Web-разработка с точки зрения самой разработки, а именно - Frontend</span> 
-                        </p>
-                        <p>Технологии</p>
+                        <div class="about_me_item">
+                            <span class="periods">сентябрь 2015 - февраль 2021</span> 
+                            <p>Учился в Санкт-Петербургском государственном технологическом институте. Имею специальность <span>инженер</span>. </p>
+                        </div>
+                        <div class="about_me_item">
+                            <span class="periods">август 2019 - март 2021</span> 
+                            <p>Во время учебы работал менеджером в компании ООО "Подъемные платформы". Мне стала интересна область Web-разработки.</p>
+                        </div>  
+                        <div class="about_me_item">
+                            <span class="periods">март 2021 - январь 2021</span> 
+                            <p>Работал менеджером по работе с клиентами в компании <span>"СеоВен"</span>, специализирующаяся на рекламе и созданию сайтов. В мои обязанности входило общение с клиентами по техническим доработкам сайтов (или созданию сайтов), тестирование работы сайта. Был звеном между клиентом и разработчиками. <br>
+                             <span>Стала интересна Web-разработка с точки зрения самой разработки, а именно - Frontend</span>.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -56,55 +75,64 @@
         <article class="projects">
             <div class="container">
                 <div class="projects_wrapper">
+                    <h2 class="header">Проекты</h2>
                     <div class="project_item">
-                        <h3>
-                            название
-                        </h3>
-                        <p class="project_descr">
-                            Описание проекта, что было использовано
-                        </p>
-                        <img src="" alt="Скриншот проекта">
+                        <div class="project_descr">
+                            <h3>
+                                название
+                            </h3>
+                            <p>
+                                Описание проекта, что было использовано
+                            </p>
+                        </div>
+                        <img src="img/dmhdj.jpeg" alt="Скриншот проекта">
                         <div class="project_btns">
-                            <a href="">посмотреть</a>
+                            <a href="">Посмотреть</a>
                             <a href="">GitHub</a>
                         </div>
                     </div>
                     <div class="project_item">
-                        <h3>
-                            название
-                        </h3>
-                        <p class="project_descr">
-                            Описание проекта, что было использовано
-                        </p>
-                        <img src="" alt="Скриншот проекта">
+                        <div class="project_descr">
+                            <h3>
+                                название
+                            </h3>
+                            <p>
+                                Описание проекта, что было использовано
+                            </p>
+                        </div>
+                        <img src="img/dmhdj.jpeg" alt="Скриншот проекта">
                         <div class="project_btns">
-                            <a href="">посмотреть</a>
+                            <a href="">Посмотреть</a>
                             <a href="">GitHub</a>
                         </div>
                     </div>
                     <div class="project_item">
-                        <h3>
-                            название
-                        </h3>
-                        <p class="project_descr">
-                            Описание проекта, что было использовано
-                        </p>
-                        <img src="" alt="Скриншот проекта">
+                        <div class="project_descr">
+                            <h3>
+                                название
+                            </h3>
+                            <p>
+                                Описание проекта, что было использовано
+                            </p>
+                        </div>
+                        <img src="img/dmhdj.jpeg" alt="Скриншот проекта">
                         <div class="project_btns">
-                            <a href="">посмотреть</a>
+                            <a href="">Посмотреть</a>
                             <a href="">GitHub</a>
                         </div>
                     </div>
                     <div class="project_item">
-                        <h3>
-                            название
-                        </h3>
-                        <p class="project_descr">
-                            Описание проекта, что было использовано
-                        </p>
-                        <img src="" alt="Скриншот проекта">
+                        <div class="project_descr">
+                            <h3>
+                                название
+                            </h3>
+                            <p>
+                                Описание проекта, что было использовано
+                            </p>
+                        </div>
+                        <img src="img/dmhdj.jpeg" alt="Скриншот проекта">
                         <div class="project_btns">
-                            <a href="">посмотреть</a>
+                            <a href="">Посмотреть</a>
                             <a href="">GitHub</a>
                         </div>
                     </div>
@@ -114,48 +142,52 @@
         <article class="contact">
             <div class="container">
                 <div class="contact_wrapper">
-                    <h2>Контакты</h2>
+                    <h2 class="header">Контакты</h2>
                     <p>Вы можете посмотреть резюме, написать на почту, а также позвонить или написать в мессенджерах</p>
                     <ul class="contact_list">
-                        <li class="contact_item"><a href="" class="resume">Резюме</a></li>
-                        <li class="contact_item"><span>Телефон (WA, Telegram)</span></li>
-                        <li class="contact_item"><span>Электронная почта</span></li>
-                        <li class="contact_item"><span>github</span></li>
+                        <li class="contact_item"><a href="#" class="resume">Резюме</a></li>
+                        <li class="contact_item"><a href="tel: +79319756778">+7(931) 975-67-78 (WA, Telegram)</a></li>
+                        <li class="contact_item"><a href="mailto:dmitriy.hdj@yandex.ru">dmitriy.hdj@yandex.ru</a></li>
+                        <li class="contact_item"><a href="https://github.com/DmHdj" target="_black">GitHub</a></li>
                     </ul>
                     <p>Либо заполните форму ниже, и я свяжусь с вами. Письмо придет мне на почту</p>
                     <form action="send.php" method="post" name="Feedback" enctype="multipart/form-data">
-                        <fieldset class="feedback">
-                            <label>
-                                Имя
-                                <input type="text" name="name" placeholder="Введите имя" required>
-                           </label>
-                           <label>
-                                Фамилия
-                                <input type="text" name="surname" placeholder="Введите фамилию">
-                            </label>
-                            <label>
-                                Почта
-                                <input type="email" name="email" placeholder="Введите почту" required >
-                           </label>
-                           <label>
-                                Телефон
-                                <input type="tel" name="telephone" placeholder="Введите телефон">
-                            </label>
-                            <label>
-                                Сообщение
-                                <textarea name="message"  placeholder="Введите сообщение" required></textarea>
-                            </label>
-                            <label>
-                                Добавить файл
-                                <input type="file" name="uploaded_file">
-                            </label>
-                            <input type="reset" value="Почистить форму" class="button_reset">
-                            <input type="submit" value="Отправить форму" class="button_submit">
-                        </fieldset>
+                        <label>
+                            Имя
+                            <input type="text" name="name" placeholder="Введите имя" required>
+                        </label>
+                        <label>
+                            Фамилия
+                            <input type="text" name="surname" placeholder="Введите фамилию">
+                        </label>
+                        <label>
+                            Почта
+                            <input type="email" name="email" placeholder="Введите почту" required >
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="telephone" placeholder="Введите телефон">
+                        </label>
+                        <label>
+                            Сообщение
+                            <textarea name="message"  placeholder="Введите сообщение" required></textarea>
+                        </label>
+                        <label class="add_file">
+                            Добавить файл
+                            <input type="file" name="uploaded_file">
+                        </label>
+                        <input type="reset" value="Почистить" class="button_reset btn">
+                        <input type="submit" value="Отправить" class="button_submit btn">
                     </form>
                 </div>
             </div>
         </article>
     </main>
+    <footer>
+        <div>Made by Dmitriy H.</div>
+        <div class="git_icon"><a href="https://github.com/DmHdj/portfolio" target="_blanc"> This site on GitHub</a></div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
