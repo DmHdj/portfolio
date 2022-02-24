@@ -1,6 +1,6 @@
 # dmitriyhdj
 
-## Personal site of Dima X, working on HTML, CSS, SASS and JS.
+## Personal site of Dima H, working on HTML, CSS, SASS and JS.
 
 
 The source code for this site was created for my own use.
